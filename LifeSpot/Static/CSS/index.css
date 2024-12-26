@@ -24,6 +24,8 @@ header {
 }
 
 footer {    
+    position:absolute;
+    bottom: 0;
     font-size: medium;
     color: dimgrey;
     line-height: 66%;

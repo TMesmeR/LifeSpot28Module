@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-    <link href="../Statics/CSS/index.css" rel="stylesheet">
-    <script src="../Statics/JS/index.js" defer></script>
+    <link href="../Static/CSS/index.css" rel="stylesheet">
+    <script src="../Static/JS/index.js"></script>
+    <!----  <script>
+           // checkAge();
+           handleSession();
+           sessionLog();
+           const inputParseFunction = function () {
+               return document.getElementsByTagName('input')[0].value.toLowerCase();
+           }
+
+           setTimeout(() =>
+               alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
+               30000);
+      </script>!--->
 </head>
+
 <body>
     <div class="container">
         <header id="header-index">
@@ -15,7 +28,8 @@
 
         <main>
             <div class="search-container">
-                <input type="text" placeholder="Поиск видео..." class="search-input">
+                <input type="text" placeholder="Поиск видео..." class="search-input"
+                       oninput=" findRightWindow();">
             </div>
 
             <div class=" video-container">
@@ -42,18 +56,9 @@
                 <h3 class="video-title">Лондон, автобусный маршрут</h3>
             </div>
         </main>
-
-        <aside id="sidebar">
-            <nav class="navbar">
-                <a href="/"><p>Все трансляции</p></a>
-                <a href="/"><p>О проекте</p></a>
-            </nav>
-        </aside>
-
-        <footer>
-            <p>LifeSpot - все права защищены</p>
-            <p>Связаться с нами: contact@lifespot.ru</p>
-        </footer>
     </div>
+    <!--SIDEBAR-->
+    <!--FOOTER-->
 </body>
+
 </html>
